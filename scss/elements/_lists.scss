@@ -31,8 +31,9 @@ ol {
             background-color: read('accentColor');
             color: setContrastColor(read('accentColor'));
             display: inline-block;
-            margin-right: core($core, 'margin', 's');
-            padding: core($core, 'margin', 'xs') core($core, 'margin', 's');
+            margin-right: core($core, 'margin', 'xs') * 2;
+            padding-left: core($core, 'margin', 'xs') * 2;
+            padding-right: core($core, 'margin', 'xs') * 2;
         }
     }
 }

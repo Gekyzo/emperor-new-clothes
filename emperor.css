@@ -221,7 +221,6 @@ thead {
 tfoot {
   border-top: 1px solid #8c8b8b; }
 
-th:not(:last-child),
 td:not(:last-child) {
   border-right: 1px solid #8c8b8b; }
 
@@ -243,8 +242,9 @@ ol {
       background-color: #5b8ab1;
       color: #ececec;
       display: inline-block;
-      margin-right: 5%;
-      padding: 1% 5%; }
+      margin-right: 2%;
+      padding-left: 2%;
+      padding-right: 2%; }
 
 dl {
   display: flex;
