@@ -2,12 +2,12 @@ $debugLine: 5px;
 
 @if $debug==true {
     html {
-        &:before {
+        &::after {
             content: '';
-            height: calc(100% - (#{$debugLine} * 2));
+            height: 5px;
             width: 100%;
-            position: absolute;
-            border-top: $debugLine solid transparent;
+            position: fixed;
+            bottom: 0;
             border-bottom: $debugLine solid transparent;
 
             @include mobile {
@@ -22,5 +22,14 @@ $debugLine: 5px;
                 border-color: #26be49;
             }
         }
+    }
+    body,
+    header,
+    aside,
+    main,
+    footer,
+    section,
+    article {
+        border: 1px dashed black;
     }
 }

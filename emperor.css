@@ -2,10 +2,36 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
-header, nav, aside, main, article, footer {
+html::after {
+  content: '';
+  height: 5px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-bottom: 5px solid transparent; }
+  @media (min-width: 0) and (max-width: 480px) {
+    html::after {
+      border-color: #f5c6cb; } }
+  @media (min-width: 481px) and (max-width: 1024px) {
+    html::after {
+      border-color: #ffeeba; } }
+  @media (min-width: 1025px) and (max-width: 2440px) {
+    html::after {
+      border-color: #26be49; } }
+
+body,
+header,
+aside,
+main,
+footer,
+section,
+article {
+  border: 1px dashed black; }
+
+header, nav, aside, main, article, section, footer {
   padding: 1%; }
 
-address, cite, table, caption, caption::after, ul,
+section, address, cite, table, caption, caption::after, ul,
 ol,
 dl, button,
 [type='submit'],
@@ -79,10 +105,14 @@ nav ul {
   list-style-type: none;
   display: flex;
   flex-flow: row wrap; }
-  @media (min-width: 0) and (max-width: 480px) {
-    nav ul li {
-      flex-basis: 50%;
-      padding: 1%; } }
+  nav ul li {
+    flex-grow: 1; }
+    nav ul li::before {
+      content: none; }
+    @media (min-width: 0) and (max-width: 480px) {
+      nav ul li {
+        flex-basis: 50%;
+        padding: 1%; } }
 
 @media (min-width: 0) and (max-width: 480px) {
   aside {
