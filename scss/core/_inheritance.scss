@@ -12,12 +12,6 @@
 }
 
 %element {
-    @include mobile {
-        margin-top: core($core, 'margin', 'xs');
-        margin-bottom: core($core, 'margin', 'xs');
-    }
-    @include tablet-desktop {
-        margin-top: core($core, 'margin', 's');
-        margin-bottom: core($core, 'margin', 's');
-    }
+    margin-top: core($core, 'margin', 'xs');
+    margin-bottom: core($core, 'margin', 'xs');
 }

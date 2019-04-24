@@ -6,6 +6,8 @@ nav {
         list-style-type: none;
         display: flex;
         flex-flow: row wrap;
+        margin-top: 0;
+        margin-bottom: 0;
 
         li {
             flex-grow: 1;

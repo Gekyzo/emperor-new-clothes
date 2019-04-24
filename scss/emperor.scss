@@ -1,35 +1,14 @@
 // Stylesheet core. DONT CHANGE THE ORDER HERE.
-@import 
-    'settings',
-    'core/tools',
-    'core/core',
-    'core/breakpoints',
-    'core/debugger',
-    'core/inheritance',
-    'core/reset'
-;
+@import "settings", "core/tools", "core/core", "core/breakpoints",
+    "core/debugger", "core/inheritance", "core/reset";
 
 // SELECT HERE THE ELEMENTS YOU NEED TO COMPILE.
 
 /* Layout */
-@import
-    'elements/layout/body',
-    'elements/layout/header',
-    'elements/layout/nav',
-    'elements/layout/aside',
-    'elements/layout/main',
-    'elements/layout/article',
-    'elements/layout/section',
-    'elements/layout/footer'
-;
+@import "elements/layout/body", "elements/layout/header", "elements/layout/nav",
+    "elements/layout/aside", "elements/layout/main", "elements/layout/article",
+    "elements/layout/section", "elements/layout/footer";
 
 /* Headings */
-@import
-    'elements/headings',
-    'elements/texts',
-    'elements/table',
-    'elements/lists',
-    'elements/links',
-    'elements/forms'
-;    
-
+@import "elements/headings", "elements/texts", "elements/table",
+    "elements/lists", "elements/links", "elements/forms";
