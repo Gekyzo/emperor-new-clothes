@@ -6,8 +6,8 @@ const sourcemaps = require('gulp-sourcemaps')
 function sass() {
     return gulp
         .src('./scss/emperor.scss')
-        .pipe(sassCompile())
         .pipe(sourcemaps.init())
+        .pipe(sassCompile())
         .pipe(sourcemaps.write('./map/'))
         .pipe(gulp.dest('./'))
 }
