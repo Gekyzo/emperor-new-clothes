@@ -1,0 +1,23 @@
+%layout-component {
+    padding: core($core, 'margin', 'xs');
+}
+
+%box-shadow {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+%block {
+    display: block;
+    width: 100%;
+}
+
+%element {
+    @include mobile {
+        margin-top: core($core, 'margin', 'xs');
+        margin-bottom: core($core, 'margin', 'xs');
+    }
+    @include tablet-desktop {
+        margin-top: core($core, 'margin', 's');
+        margin-bottom: core($core, 'margin', 's');
+    }
+}

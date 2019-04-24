@@ -1,0 +1,29 @@
+// FUNCTIONS
+@function read($value) {
+    @return map-get($settings, $value);
+}
+
+@function core($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+    @return $map;
+}
+
+@function setContrastColor($bgColor) {
+    @if lightness($bgColor) <= 70% {
+        @if lightness(read('lightColor')) >= 70% {
+            @return read('lightColor');
+        } @else {
+            @return white;
+        }
+    }
+}
+
+@function setAccentColor() {
+    @if lightness(read('accentColor')) <= 70% {
+        @return darken(read('accentColor'), 20%);
+    } @else {
+        @return read('accentColor');
+    }
+}

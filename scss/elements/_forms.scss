@@ -1,0 +1,78 @@
+button,
+[type='submit'],
+[type='reset'] {
+    @extend %block;
+    @extend %element;
+    padding: core($core, 'margin', 'xs');
+    border: {
+        top: {
+            width: 0;
+        }
+        right: {
+            width: 0;
+        }
+        left: {
+            width: 0;
+        }
+        bottom: {
+            width: 2px;
+            color: read('accentColor');
+        }
+    }
+    background-color: read('accentColor');
+    color: setContrastColor(read('accentColor'));
+}
+
+form {
+    @extend %block;
+    @extend %element;
+    border: {
+        color: read('accentColor');
+        width: 1px;
+        style: solid;
+    }
+    padding: core($core, 'margin', 'xs');
+}
+
+fieldset {
+    @extend %block;
+    @extend %element;
+    border: {
+        color: read('accentColor');
+        width: 1px;
+        style: solid;
+    }
+    padding: core($core, 'margin', 'xs');
+    legend {
+        padding: core($core, 'margin', 'xs');
+        color: setAccentColor();
+    }
+}
+
+select,
+option,
+[type='text'] {
+    padding: core($core, 'margin', 'xs');
+}
+
+meter {
+    @extend %block;
+    @extend %element;
+    @include mobile-tablet {
+        height: core($core, 'margin', 's');
+    }
+    @include desktop {
+        height: core($core, 'margin', 'xs') * 2;
+    }
+}
+
+progress {
+    @extend %block;
+    @extend %element;
+    @include mobile-tablet {
+        height: core($core, 'margin', 's');
+    }
+    @include desktop {
+        height: core($core, 'margin', 'xs') * 2;
+    }
+}

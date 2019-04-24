@@ -1,0 +1,26 @@
+$debugLine: 5px;
+
+@if $debug==true {
+    html {
+        &:before {
+            content: '';
+            height: calc(100% - (#{$debugLine} * 2));
+            width: 100%;
+            position: absolute;
+            border-top: $debugLine solid transparent;
+            border-bottom: $debugLine solid transparent;
+
+            @include mobile {
+                border-color: #f5c6cb;
+            }
+
+            @include tablet {
+                border-color: #ffeeba;
+            }
+
+            @include desktop {
+                border-color: #26be49;
+            }
+        }
+    }
+}

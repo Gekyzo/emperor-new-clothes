@@ -1,0 +1,19 @@
+// CORE SETTINGS
+$core: (
+    // Breakpoint values
+    bp: (
+        's-max': 480px,
+        'm-min': 481px,
+        'm-max': 1024px,
+        'l-min': 1025px,
+        'l-max': 2440px,
+    ),
+    // Margin values
+    margin: (
+        'xs': 1%,
+        's': 5%,
+        'm': 10%,
+        'l': 15%,
+        'xl': 25%,
+    )
+);

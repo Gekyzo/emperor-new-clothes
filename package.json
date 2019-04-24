@@ -1,0 +1,22 @@
+{
+    "name": "the-emperor-new-clothes",
+    "version": "0.0.1",
+    "description": "Basic CSS responsive stylesheet",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "server": "live-server",
+        "sass": "sass --watch ./scss/:./"
+    },
+    "author": "Ciro Mora",
+    "license": "MIT",
+    "dependencies": {
+        "live-server": "^1.2.1",
+        "sass": "^1.17.4"
+    },
+    "devDependencies": {
+        "gulp": "^4.0.1",
+        "gulp-sass": "^4.0.2",
+        "gulp-sourcemaps": "^2.6.5"
+    }
+}

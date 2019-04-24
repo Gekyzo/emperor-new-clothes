@@ -1,0 +1,44 @@
+address {
+    @extend %block;
+    @extend %element;
+}
+
+b {
+    font-weight: 700;
+}
+
+blockquote {
+    @extend %element;
+    text-align: justify;
+}
+
+cite,
+blockquote {
+    border-left: 5px solid read('accentColor');
+    padding: core($core, 'margin', 's');
+    background-image: linear-gradient(
+        to right,
+        read('lightColor'),
+        lighten(read('lightColor'), 20%)
+    );
+}
+
+cite {
+    @extend %block;
+    @extend %element;
+    font-style: italic;
+}
+
+p {
+    @extend %element;
+}
+
+code,
+pre {
+    font-family: read('monospaceFont');
+}
+
+em,
+i {
+    font-style: italic;
+}

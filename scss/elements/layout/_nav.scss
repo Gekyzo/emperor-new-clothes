@@ -1,0 +1,17 @@
+nav {
+    @extend %layout-component;
+
+    ul {
+        text-align: center;
+        list-style-type: none;
+        display: flex;
+        flex-flow: row wrap;
+
+        li {
+            @include mobile {
+                flex-basis: 50%;
+                padding: core($core, 'margin', 'xs');
+            }
+        }
+    }
+}

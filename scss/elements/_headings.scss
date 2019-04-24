@@ -1,0 +1,35 @@
+h1,
+h2,
+h3 {
+    @extend %element;
+    font-family: read('accentFont');
+    font-weight: bold;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+hr {
+    @extend %element;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    height: 1px;
+    width: 75%;
+    background-image: linear-gradient(
+        to right,
+        read('lightColor'),
+        read('mediumColor'),
+        read('lightColor')
+    );
+}

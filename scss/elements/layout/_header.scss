@@ -1,0 +1,9 @@
+header {
+    @extend %layout-component;
+    @include mobile {
+        order: 1;
+    }
+    @include tablet-desktop {
+        flex-basis: 100%;
+    }
+}
