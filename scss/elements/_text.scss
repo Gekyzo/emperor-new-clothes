@@ -1,5 +1,9 @@
+abbr[title] {
+    border-bottom: 1px solid read('accentColor');
+}
+
 address {
-    @extend %block;
+    width: 100%;
     @extend %element;
 }
 
@@ -24,13 +28,13 @@ blockquote {
 }
 
 cite {
-    @extend %block;
     @extend %element;
     font-style: italic;
 }
 
 p {
     @extend %element;
+    text-align: justify;
 }
 
 code,

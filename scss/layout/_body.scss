@@ -12,7 +12,6 @@ body {
     @include tablet-desktop {
         padding: core($core, 'margin', 'xs') core($core, 'margin', 'xs') 0
             core($core, 'margin', 'xs');
-        flex-flow: row wrap;
         align-content: flex-start;
     }
     @include desktop {
