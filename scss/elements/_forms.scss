@@ -4,21 +4,7 @@ button,
     @extend %block;
     @extend %element;
     padding: core($core, 'margin', 'xs');
-    border: {
-        top: {
-            width: 0;
-        }
-        right: {
-            width: 0;
-        }
-        left: {
-            width: 0;
-        }
-        bottom: {
-            width: 2px;
-            color: read('accentColor');
-        }
-    }
+    border-bottom: 2px solid darken(read('accentColor'), 20%);
     background-color: read('accentColor');
     color: setContrastColor(read('accentColor'));
 }
@@ -53,6 +39,7 @@ select,
 option,
 [type='text'] {
     padding: core($core, 'margin', 'xs');
+    border: 1px solid read('accentColor');
 }
 
 meter {

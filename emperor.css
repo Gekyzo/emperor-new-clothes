@@ -51,11 +51,14 @@ video {
   margin-top: 1%;
   margin-bottom: 1%; }
 
+/* Basic reset */
 * {
   margin: 0;
   padding: 0;
+  border: 0;
   box-sizing: border-box; }
 
+/* Set window height */
 html,
 body {
   height: 100%; }
@@ -279,11 +282,7 @@ button,
 [type='submit'],
 [type='reset'] {
   padding: 1%;
-  border-top-width: 0;
-  border-right-width: 0;
-  border-left-width: 0;
-  border-bottom-width: 2px;
-  border-bottom-color: #5b8ab1;
+  border-bottom: 2px solid #365670;
   background-color: #5b8ab1;
   color: #ececec; }
 
@@ -305,7 +304,8 @@ fieldset {
 select,
 option,
 [type='text'] {
-  padding: 1%; }
+  padding: 1%;
+  border: 1px solid #5b8ab1; }
 
 @media (min-width: 0) and (max-width: 1024px) {
   meter {

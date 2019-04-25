@@ -1,9 +1,12 @@
+/* Basic reset */
 * {
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
+/* Set window height */
 html,
 body {
     height: 100%;
