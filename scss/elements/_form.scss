@@ -1,7 +1,6 @@
 button,
 [type='submit'],
 [type='reset'] {
-    @extend %block;
     @extend %element;
     padding: core($core, 'margin', 'xs');
     border-bottom: 2px solid darken(read('accentColor'), 20%);
@@ -9,8 +8,12 @@ button,
     color: setContrastColor(read('accentColor'));
 }
 
+[type='submit'],
+[type='reset'] {
+    width: 100%;
+}
+
 form {
-    @extend %block;
     @extend %element;
     border: {
         color: read('accentColor');
@@ -21,7 +24,6 @@ form {
 }
 
 fieldset {
-    @extend %block;
     @extend %element;
     border: {
         color: read('accentColor');
@@ -43,7 +45,6 @@ option,
 }
 
 meter {
-    @extend %block;
     @extend %element;
     @include mobile-tablet {
         height: core($core, 'margin', 's');
@@ -54,7 +55,6 @@ meter {
 }
 
 progress {
-    @extend %block;
     @extend %element;
     @include mobile-tablet {
         height: core($core, 'margin', 's');
@@ -62,4 +62,8 @@ progress {
     @include desktop {
         height: core($core, 'margin', 'xs') * 2;
     }
+}
+
+input {
+    @extend %element;
 }

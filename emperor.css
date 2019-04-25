@@ -2,38 +2,13 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
-html::after {
-  content: '';
-  height: 5px;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  border-bottom: 5px solid transparent; }
-  @media (min-width: 0) and (max-width: 480px) {
-    html::after {
-      border-color: #f5c6cb; } }
-  @media (min-width: 481px) and (max-width: 1024px) {
-    html::after {
-      border-color: #ffeeba; } }
-  @media (min-width: 1025px) and (max-width: 2440px) {
-    html::after {
-      border-color: #26be49; } }
-
-body,
-header,
-aside,
-main,
-footer,
-section,
-article {
-  border: 1px dashed black; }
-
+@import url("https://necolas.github.io/normalize.css/latest/normalize.css");
 article, aside, footer, header, main, nav, section {
   padding: 1%; }
 
-section, button,
-[type='submit'],
-[type='reset'], form, fieldset, meter, progress, ul,
+section, h1,
+h2,
+h3, ul,
 ol,
 dl, table, caption, caption::after, address, cite {
   display: block;
@@ -41,7 +16,7 @@ dl, table, caption, caption::after, address, cite {
 
 button,
 [type='submit'],
-[type='reset'], form, fieldset, meter, progress, h1,
+[type='reset'], form, fieldset, meter, progress, input, h1,
 h2,
 h3, hr, ul,
 ol,
@@ -51,17 +26,14 @@ video, table, address, blockquote, cite, p {
   margin-top: 1%;
   margin-bottom: 1%; }
 
-/* Basic reset */
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box; }
+blockquote {
+  margin-left: 0;
+  margin-right: 0; }
 
-/* Set window height */
-html,
-body {
-  height: 100%; }
+button,
+[type='reset'],
+[type='submit'] {
+  border: 0; }
 
 /* Layout */
 @media (min-width: 0) and (max-width: 480px) {
@@ -142,6 +114,10 @@ button,
   background-color: #5b8ab1;
   color: #ececec; }
 
+[type='submit'],
+[type='reset'] {
+  width: 100%; }
+
 form {
   border-color: #5b8ab1;
   border-width: 1px;
@@ -183,11 +159,26 @@ h1,
 h2,
 h3 {
   font-family: "Montserrat";
-  font-weight: bold;
-  width: 100%; }
+  font-weight: bold; }
+  @media (min-width: 0) and (max-width: 480px) {
+    h1,
+    h2,
+    h3 {
+      text-align: center; } }
 
 h1 {
-  font-size: 2rem; }
+  font-size: 2rem;
+  position: relative; }
+  h1::after {
+    content: '';
+    position: absolute;
+    left: 12.5%;
+    bottom: -1px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1px;
+    width: 75%;
+    background-image: linear-gradient(to right, #ececec, #8c8b8b, #ececec); }
 
 h2 {
   font-size: 1.5rem; }
@@ -198,7 +189,6 @@ h3 {
 hr {
   margin-left: auto;
   margin-right: auto;
-  border: 0;
   height: 1px;
   width: 75%;
   background-image: linear-gradient(to right, #ececec, #8c8b8b, #ececec); }
