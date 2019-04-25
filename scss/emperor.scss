@@ -1,8 +1,8 @@
 // Stylesheet core. DONT CHANGE THE ORDER HERE.
 @import 
     "settings",
-    "core/tools",
     "core/core",
+    "core/tools",
     "core/breakpoints",
     "core/debugger",
     "core/inheritance",
@@ -13,23 +13,23 @@
 
 /* Layout */
 @import 
-    "elements/layout/body",
-    "elements/layout/header",
-    "elements/layout/nav",
-    "elements/layout/aside",
-    "elements/layout/main",
     "elements/layout/article",
+    "elements/layout/aside",
+    "elements/layout/body",
+    "elements/layout/footer",
+    "elements/layout/header",
+    "elements/layout/main",
+    "elements/layout/nav",
     "elements/layout/section",
-    "elements/layout/footer"
 ;
 
 /* Headings */
 @import
-    "elements/headings",
-    "elements/texts",
+    "elements/form",
+    "elements/heading",
+    "elements/link",
+    "elements/list",
+    "elements/media",
     "elements/table",
-    "elements/lists",
-    "elements/links",
-    "elements/forms",
-    "elements/media"
+    "elements/text"
 ;
