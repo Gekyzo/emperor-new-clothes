@@ -1,9 +1,0 @@
-aside {
-    @extend %layout-component;
-    @include mobile {
-        order: 3;
-    }
-    @include tablet-desktop {
-        flex-basis: calc(100% / 3);
-    }
-}

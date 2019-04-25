@@ -1,9 +1,0 @@
-footer {
-    @extend %layout-component;
-    @include mobile {
-        order: 4;
-    }
-    @include tablet-desktop {
-        flex-basis: 100%;
-    }
-}
