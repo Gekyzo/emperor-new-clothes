@@ -45,22 +45,24 @@ option,
 }
 
 meter {
+    width: 100%;
     @extend %element;
     @include mobile-tablet {
-        height: core($core, 'margin', 's');
+        height: 20px;
     }
     @include desktop {
-        height: core($core, 'margin', 'xs') * 2;
+        height: 50px;
     }
 }
 
 progress {
+    width: 100%;
     @extend %element;
     @include mobile-tablet {
-        height: core($core, 'margin', 's');
+        height: 20px;
     }
     @include desktop {
-        height: core($core, 'margin', 'xs') * 2;
+        height: 50px;
     }
 }
 

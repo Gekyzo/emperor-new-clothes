@@ -35,6 +35,12 @@ button,
 [type='submit'] {
   border: 0; }
 
+ul {
+  padding-left: 0; }
+
+hr {
+  border: 0; }
+
 /* Layout */
 @media (min-width: 0) and (max-width: 480px) {
   aside {
@@ -139,21 +145,23 @@ option,
   padding: 1%;
   border: 1px solid #5b8ab1; }
 
-@media (min-width: 0) and (max-width: 1024px) {
-  meter {
-    height: 5%; } }
+meter {
+  width: 100%; }
+  @media (min-width: 0) and (max-width: 1024px) {
+    meter {
+      height: 20px; } }
+  @media (min-width: 1025px) and (max-width: 2440px) {
+    meter {
+      height: 50px; } }
 
-@media (min-width: 1025px) and (max-width: 2440px) {
-  meter {
-    height: 2%; } }
-
-@media (min-width: 0) and (max-width: 1024px) {
-  progress {
-    height: 5%; } }
-
-@media (min-width: 1025px) and (max-width: 2440px) {
-  progress {
-    height: 2%; } }
+progress {
+  width: 100%; }
+  @media (min-width: 0) and (max-width: 1024px) {
+    progress {
+      height: 20px; } }
+  @media (min-width: 1025px) and (max-width: 2440px) {
+    progress {
+      height: 50px; } }
 
 h1,
 h2,
@@ -173,7 +181,7 @@ h1 {
     content: '';
     position: absolute;
     left: 12.5%;
-    bottom: -1px;
+    bottom: -5px;
     margin-left: auto;
     margin-right: auto;
     height: 1px;
@@ -265,7 +273,7 @@ caption {
     content: '';
     height: 1px;
     width: 75%;
-    margin: 5% auto;
+    margin: 1% auto;
     background-image: linear-gradient(to right, #ececec, #8c8b8b, #ececec); }
 
 tr {

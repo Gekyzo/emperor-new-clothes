@@ -20,7 +20,7 @@ caption {
         content: '';
         height: 1px;
         width: 75%;
-        margin: core($core, 'margin', 's') auto;
+        margin: core($core, 'margin', 'xs') auto;
         background-image: linear-gradient(
             to right,
             read('lightColor'),
